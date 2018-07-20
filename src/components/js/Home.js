@@ -4,7 +4,7 @@ import {NavBar} from './NavBar';
 import {CustomCarousel} from './Carousel';
 import {Footer} from './Footer';
 
-export class Home extends Component {
+class Home extends Component {
   render() {
     return (
         <Grid fluid>
@@ -15,3 +15,5 @@ export class Home extends Component {
     );
   }
 }
+
+export default Home;

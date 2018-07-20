@@ -4,7 +4,7 @@ import {Title} from './Title';
 import {WorkshopCard} from './WorkshopCard';
 import {Grid} from 'react-bootstrap';
 
-export class Workshops extends Component {
+class Workshops extends Component {
   render() {
     return (
         <Grid fluid>
@@ -38,3 +38,5 @@ export class Workshops extends Component {
     );
   }
 }
+
+export default Workshops;

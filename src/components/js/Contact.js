@@ -4,7 +4,7 @@ import {NavBar} from './NavBar';
 import {Title} from './Title';
 import {ContactForm} from './ContactForm';
 
-export class Contact extends Component {
+class Contact extends Component {
     render() {
       return (
           <Grid fluid>
@@ -15,3 +15,5 @@ export class Contact extends Component {
       );
     }
 }
+
+export default Contact;

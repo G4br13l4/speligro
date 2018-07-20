@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {NavBar} from './NavBar';
 import { Grid } from 'react-bootstrap';
 
-export class News extends Component {
+class News extends Component {
     render() {
       return (
           <Grid>
@@ -12,3 +12,5 @@ export class News extends Component {
       );
     }
 }
+
+export default News;

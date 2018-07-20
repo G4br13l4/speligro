@@ -16,14 +16,14 @@ export class NavBar extends Component {
             <Col xs={4} md={4} className="box_menu">
               <ButtonToolbar>
                 <DropdownButton pullRight title="Menu">
-                  <MenuItem eventKey="1" href="/">Home</MenuItem>
-                  <MenuItem eventKey="2" href="/historia">Historia</MenuItem>
-                  <MenuItem eventKey="3" href="/proyectos">Proyectos</MenuItem>
-                  <MenuItem eventKey="4" href="/talleres">Talleres</MenuItem>
-                  <MenuItem eventKey="5" href="/tiendas">Compra aquí</MenuItem>
-                  <MenuItem eventKey="6" href="/noticias">Noticias</MenuItem>
+                  <MenuItem eventKey="1" ><Link to="/">Home</Link></MenuItem>
+                  <MenuItem eventKey="2" ><Link to="/historia">Historia</Link></MenuItem>
+                  <MenuItem eventKey="3" ><Link to="/proyectos">Proyectos</Link></MenuItem>
+                  <MenuItem eventKey="4" ><Link to="/talleres">Talleres</Link></MenuItem>
+                  <MenuItem eventKey="5" ><Link to="/tiendas">Compra aquí</Link></MenuItem>
+                  <MenuItem eventKey="6" ><Link to="/noticias">Noticias</Link></MenuItem>
                   <MenuItem divider />
-                  <MenuItem eventKey="7" href="/contacto">Contacto</MenuItem>
+                  <MenuItem eventKey="7" ><Link to="/contacto">Contacto</Link></MenuItem>
                 </DropdownButton>
               </ButtonToolbar>     
             </Col>

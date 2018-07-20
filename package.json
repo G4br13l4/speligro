@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://G4br13l4.github.io/speligro",
   "dependencies": {
+    "instafeed.js": "^1.4.1",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",

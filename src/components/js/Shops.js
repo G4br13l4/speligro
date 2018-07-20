@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {NavBar} from './NavBar';
 import { Grid } from 'react-bootstrap';
 
-export class Shops extends Component {
+class Shops extends Component {
   render() {
     return (
         <Grid fluid>
@@ -12,3 +12,5 @@ export class Shops extends Component {
     );
   }
 }
+
+export default Shops;

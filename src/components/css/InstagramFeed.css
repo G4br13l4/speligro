@@ -1,7 +1,26 @@
 .insta-box{
-   height: 22vh;
+    -webkit-animation: rotation 2s 1 linear;
+    padding: 0;
+}
+
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
 }
 
 .instafeed__item__background{
     height: 100%;
+}
+
+.icon{
+    width: 10%;
+}
+
+.subtitle{
+    text-align: center;
 }

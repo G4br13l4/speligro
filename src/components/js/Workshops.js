@@ -11,6 +11,7 @@ class Workshops extends Component {
             <NavBar/>
             <Title title="Pròximos Talleres"/>
             <WorkshopCard 
+                img= "assets/taller1.jpg"
                 title="Taller de Amigurumi"
                 teacher="Lucila"
                 duration="8 horas"
@@ -23,6 +24,20 @@ class Workshops extends Component {
                 secDate="Agosto: Miércoles 8 y Viernes 10"
             />
             <WorkshopCard 
+                img= "assets/taller2.jpg"
+                title="Taller de Amigurumi"
+                teacher="Lucila"
+                duration="8 horas"
+                sessions="2 sesiones"
+                time="11 am a 3:00 pm"
+                description="Durante el taller aprenderás la técnica básica de tejido con gancho de crochet y crearás un muñeco tejido"
+                normalCost="1,090 pesos"
+                memberCost="980 pesos"
+                firstDate="Julio: Domingos 15 y 22"
+                secDate="Agosto: Miércoles 8 y Viernes 10"
+            />
+            <WorkshopCard 
+                img= "assets/taller3.jpg"
                 title="Taller de Amigurumi"
                 teacher="Lucila"
                 duration="8 horas"

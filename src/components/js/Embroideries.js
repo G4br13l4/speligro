@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {NavBar} from './NavBar';
 import { Grid } from 'react-bootstrap';
 
-class Projects extends Component {
+class Embroideries extends Component {
   render() {
     return (
         <Grid fluid>
@@ -13,4 +13,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Embroideries;

@@ -30,7 +30,7 @@ export class WorkshopCard extends Component {
       return (
             <Row>
                 <Col xs={12}>
-                    <img src="https://scontent.fmex11-1.fna.fbcdn.net/v/t1.0-9/35145905_2043124689235008_5396707951673081856_n.jpg?_nc_cat=0&oh=09d44612b25a6b07e399b06c9128c7ef&oe=5BADF3C0"/>
+                    <img src={this.props.img}/>
                     <div>
                         <h3>{this.props.title}</h3>
                         <span>impartido por {this.props.teacher}</span>

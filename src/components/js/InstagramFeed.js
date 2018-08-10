@@ -5,20 +5,23 @@ import './../css/InstagramFeed.css';
 
 const instafeedTarget = 'instafeed';
 const template = `
-    <div class="col-md-6 col-xs-6 insta-box">
-    <a href='{{link}}' target='_blank' class='instafeed__item'>
+    <div class="col-xs-4 insta-box">
+    <a target='_blank' class='instafeed__item'>
         <img class='instafeed__item__background' src='{{image}}' />
     </a>
     </div>
     `;
-    
-   
+     
 export class InstagramFeed extends Component {
     render() {
       return ( 
           <Row id={instafeedTarget}>
+                <Col className="col-xs-12 subtitle">
+                    <h2>Lo último en Instagram</h2>
+                    <h4>Ir a <img className="icon" src="assets/instagram.png"/></h4>
+                </Col>
                 <Instafeed
-                    limit='6'
+                    limit='9'
                     ref='instafeed'
                     resolution='standard_resolution'
                     sortBy='most-recent'

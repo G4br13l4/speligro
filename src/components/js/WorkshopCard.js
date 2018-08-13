@@ -38,10 +38,10 @@ export class WorkshopCard extends Component {
                     <Button className="btn" onClick={this.handleShow}>+ Info</Button>
 
                     <Modal show={this.state.show} onHide={this.handleClose}>
-                    <Modal.Header closeButton>
+                    <Modal.Header className="workshop-modal" closeButton>
                         <Modal.Title>{this.props.title}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
+                    </Modal.Header >
+                    <Modal.Body className="workshop-modal">
                         <span>
                         impartido por {this.props.teacher}
                         </span>
@@ -66,7 +66,7 @@ export class WorkshopCard extends Component {
                         <p>Para inscribirte a los talleres impartidos en el Club de Bordado, solo necesitas hacer un depósito bancario (Banorte, OXXO, SevenEleven) por el total o el 50% del costo del taller</p>
                         <p>Envía un correo a silviapeligro@gmail.com para pedir los datos bancarios</p>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className="workshop-modal">
                         <Button onClick={this.handleClose}>Close</Button>
                     </Modal.Footer>
                     </Modal>

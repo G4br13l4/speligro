@@ -1,6 +1,9 @@
 .insta-box{
-    -webkit-animation: rotation 2s 1 linear;
     padding: 0;
+}
+
+.animate {
+    -webkit-animation: rotation 2s 1 linear;
 }
 
 

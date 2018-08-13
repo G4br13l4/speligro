@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Row, Col} from 'react-bootstrap';
 import Instafeed from 'react-instafeed';
 import './../css/InstagramFeed.css';
+import { DH_NOT_SUITABLE_GENERATOR } from 'constants';
 
 const instafeedTarget = 'instafeed';
 const template = `
@@ -13,14 +14,11 @@ const template = `
     `;
      
 export class InstagramFeed extends Component {
-    render() {
-      return ( 
-          <Row id={instafeedTarget}>
-                <Col className="col-xs-12 subtitle">
-                    <h2>Lo último en Instagram</h2>
-                    <h4>Ir a <img className="icon" src="assets/instagram.png"/></h4>
-                </Col>
-                <Instafeed
+   
+    render() {      
+      return (
+            <Row id={instafeedTarget}>
+                <Instafeed 
                     limit='9'
                     ref='instafeed'
                     resolution='standard_resolution'
@@ -30,11 +28,12 @@ export class InstagramFeed extends Component {
                     userId={this.props.userId}
                     clientId={this.props.clientId}
                     accessToken={this.props.accessToken}
-                />
-          </Row>            
+                />  
+            </Row>                
       );
     }
   }
+
 //clubdebordadomx
 // curl -F 'client_id= 2cc36afa67a54c2db3cbe423e21b932a' \
 //     -F 'client_secret=f0fbd6bb72c9402ab1a7d303f397d6f8' \

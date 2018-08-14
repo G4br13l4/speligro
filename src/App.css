@@ -9,3 +9,17 @@
   .no-pad{
     padding: 0;
   }
+
+  .h-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  /*Mailing*/
+
+  #mailing{
+    margin: 5% 0%;  
+  }  
+

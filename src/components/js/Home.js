@@ -4,6 +4,7 @@ import {NavBar} from './NavBar';
 import {CustomCarousel} from './Carousel';
 import {Footer} from './Footer';
 import {InstagramFeed} from './InstagramFeed';
+import {Mailing} from './Mailing';
 
 class Home extends Component {
   componentDidMount() {
@@ -33,7 +34,7 @@ class Home extends Component {
     return (
         <Grid fluid>
             <NavBar/>
-            <CustomCarousel/>
+            <CustomCarousel height={{height:"60vh"}}/>
             <Row>
               <Col className="col-xs-12 subtitle">
                     <h2>Lo último en Instagram</h2>
@@ -45,6 +46,7 @@ class Home extends Component {
               clientId='65b3795a54284f08ad8f893042b7fc0c'
               accessToken='200766832.65b3795.64650c8e74eb4c4fbf714c8bca5b7de2'
             />
+            <Mailing/>
             <Footer/>
         </Grid>  
     );

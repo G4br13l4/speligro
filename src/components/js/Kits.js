@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
 import {NavBar} from './NavBar';
+import {Footer} from './Footer';
  
 class Kits extends Component {
     render() {
@@ -9,7 +10,7 @@ class Kits extends Component {
               <NavBar/>
               
               <h1>History</h1>
-              
+              <Footer/>
           </Grid>  
       );
     }

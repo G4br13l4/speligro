@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import {Grid} from 'react-bootstrap';
 import {NavBar} from './NavBar';
 import {Title} from './Title';
 import {WorkshopCard} from './WorkshopCard';
-import {Grid} from 'react-bootstrap';
+import {Mailing} from './Mailing';
+import {Footer} from './Footer';
 
 class Workshops extends Component {
   render() {
@@ -20,6 +22,9 @@ class Workshops extends Component {
                 description="Durante el taller aprenderás la técnica básica de tejido con gancho de crochet y crearás un muñeco tejido"
                 normalCost="1,090 pesos"
                 memberCost="980 pesos"
+                firPhoto="assets/1.jpg"
+                secPhoto="assets/2.jpg"
+                thiPhoto="assets/3.jpg"
                 firstDate="Julio: Domingos 15 y 22"
                 secDate="Agosto: Miércoles 8 y Viernes 10"
             />
@@ -33,6 +38,9 @@ class Workshops extends Component {
                 description="Durante el taller aprenderás la técnica básica de tejido con gancho de crochet y crearás un muñeco tejido"
                 normalCost="1,090 pesos"
                 memberCost="980 pesos"
+                firPhoto="assets/1.jpg"
+                secPhoto="assets/2.jpg"
+                thiPhoto="assets/3.jpg"
                 firstDate="Julio: Domingos 15 y 22"
                 secDate="Agosto: Miércoles 8 y Viernes 10"
             />
@@ -45,10 +53,15 @@ class Workshops extends Component {
                 time="11 am a 3:00 pm"
                 description="Durante el taller aprenderás la técnica básica de tejido con gancho de crochet y crearás un muñeco tejido"
                 normalCost="1,090 pesos"
-                memberCost="980 pesos"
-                firstDate="Julio: Domingos 15 y 22"
-                secDate="Agosto: Miércoles 8 y Viernes 10"
+                memberCost="980 pesos"  
+                firPhoto="assets/1.jpg"
+                secPhoto="assets/2.jpg"
+                thiPhoto="assets/3.jpg"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
             />
+            <Mailing
+              text="¿Te gustaría recibir info sobre nuevos talleres?"
+            />
+            <Footer/>
         </Grid>  
     );
   }

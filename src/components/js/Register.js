@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import { Grid} from 'react-bootstrap';
 import {NavBar} from './NavBar';
 import {Title} from './Title';
-import {ContactForm} from './ContactForm';
+import {RegisterForm} from './FormRegister';
 import {Footer} from './Footer';
 
-class Contact extends Component {
+class Register extends Component {
     render() {
       return (
           <Grid fluid>
             <NavBar/>
-            <Title title="Contacto"/>
-            <ContactForm/>
+            <Title title="Registro a taller"/>
+            <RegisterForm/>
             <Footer/>
           </Grid>  
       );
     }
 }
 
-export default Contact;
+export default Register;

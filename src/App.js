@@ -7,6 +7,8 @@ import Embroideries from './components/js/Embroideries';
 import Kits from './components/js/Kits';
 import Club from './components/js/Club';
 import Contact from './components/js/Contact';
+import Register from './components/js/Register';
+import ThankYouPage from './components/js/ThankYouPage';
 
 class App extends Component {
   render() {
@@ -19,7 +21,8 @@ class App extends Component {
             <Route  exact path="/kits" component={Kits}/>
             <Route  exact path="/club" component={Club}/>
             <Route  exact path="/contacto" component={Contact}/>
-            
+            <Route  exact path="/registro" component={Register}/>
+            <Route  exact path="/gracias" component={ThankYouPage}/>
         </div>
       </Router>
     );

@@ -18,7 +18,7 @@ class Home extends Component {
   handleScroll() {
       let scrollPtge = (window.scrollY/(document.getElementById("root").offsetHeight - window.innerHeight))*100;
       
-      if(scrollPtge>80){
+      if(scrollPtge>65){
         let pics = document.querySelectorAll(".insta-box");
         pics.forEach(function(element) {
           element.classList.add("animate");
@@ -34,11 +34,16 @@ class Home extends Component {
     return (
         <Grid fluid>
             <NavBar/>
-            <CustomCarousel height={{height:"60vh"}}/>
+            <CustomCarousel 
+              height={{height:"60vh"}}
+              firPhoto="assets/calendar.jpg"
+              secPhoto="assets/anuncio.jpg" 
+              thiPhoto="assets/pedido.jpg" 
+            />
             <Row>
               <Col className="col-xs-12 subtitle">
                     <h2>Lo último en Instagram</h2>
-                    <h4>Ir a <img className="icon" src="assets/instagram.png"/></h4>
+                    <h4>Ir a <a href="https://www.instagram.com/speligro/"><img className="icon" src="assets/instagram.png"/></a></h4>
               </Col>
             </Row>
             <InstagramFeed ref="feed"
@@ -46,7 +51,9 @@ class Home extends Component {
               clientId='65b3795a54284f08ad8f893042b7fc0c'
               accessToken='200766832.65b3795.64650c8e74eb4c4fbf714c8bca5b7de2'
             />
-            <Mailing/>
+            <Mailing
+              text="¿Te gustaría recibir info sobre últimas noticias?"
+            />
             <Footer/>
         </Grid>  
     );

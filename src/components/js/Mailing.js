@@ -12,7 +12,7 @@ export class Mailing extends Component {
                 <Col className="col-xs-11">
                     <Form inline className="h-center">
                         <FormGroup controlId="formInlineEmail">
-                            <ControlLabel>¿Te gustaría recibir info sobre últimas noticias?</ControlLabel>{' '}
+                            <ControlLabel>{this.props.text}</ControlLabel>{' '}
                             <FormControl type="email" placeholder="Escribe tu correo aquí" />
                         </FormGroup>{' '}
                         <Button type="submit">Subscribir</Button>

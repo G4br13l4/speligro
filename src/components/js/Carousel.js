@@ -12,13 +12,13 @@ export class CustomCarousel extends Component {
                 <Col xs={12} md={8} className="box_carousel no-pad">
                 <Carousel>
                     <Carousel.Item style={this.props.height}>
-                        <img style={styles} src="assets/calendar.jpg" />
+                        <img style={styles} src={this.props.firPhoto} />
                     </Carousel.Item>
                     <Carousel.Item style={this.props.height}>
-                        <img style={styles} src="assets/anuncio.jpg" />
+                        <img style={styles} src={this.props.secPhoto}/>
                     </Carousel.Item>
                     <Carousel.Item style={this.props.height}>
-                        <img style={styles} src="assets/pedido.jpg" />
+                        <img style={styles} src={this.props.thiPhoto}/>
                     </Carousel.Item>
                     </Carousel>
                 </Col>

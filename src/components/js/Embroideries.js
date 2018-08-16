@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {NavBar} from './NavBar';
 import { Grid } from 'react-bootstrap';
+import {Footer} from './Footer';
 
 class Embroideries extends Component {
   render() {
@@ -8,6 +9,7 @@ class Embroideries extends Component {
         <Grid fluid>
             <NavBar/>
             <h1>Projects</h1>
+            <Footer/>
         </Grid>  
     );
   }

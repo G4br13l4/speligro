@@ -14,12 +14,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
   }
 
   /*Mailing*/
 
   #mailing{
     margin: 5% 0%;  
+    text-align:center;
   }  
 

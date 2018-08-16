@@ -26,7 +26,7 @@ export class WorkshopCard extends Component {
     render() {
       return (
             <Row>
-                <Col xs={12}>
+                <Col xs={12} className="workshop-card">
                     <img src={this.props.img}/>
                     <div>
                         <h3>{this.props.title}</h3>
@@ -46,17 +46,14 @@ export class WorkshopCard extends Component {
                         <p>Costo: {this.props.normalCost} (incluye material)</p>
                         <p>Costo para miembros del Club de Bordado: {this.props.memberCost} (incluye material)</p>
                         <p><Link to="/club">¿Aún no eres parte del club? ¿Quieres saber más?</Link></p>
-                        <CustomCarousel height={{height:"50vh"}}/>
+                        <CustomCarousel 
+                            height={{height:"45vh"}}
+                            firPhoto={this.props.firPhoto}
+                            secPhoto={this.props.secPhoto} 
+                            thiPhoto={this.props.thiPhoto}
+                        />
                         
-                        {/* <span>Fechas:</span>
-                        <ul>                            
-                            <li>{this.props.firstDate}</li>
-                            <li>{this.props.secDate}</li>
-                        </ul>
-
-                        <span>¿Cómo puedes inscribirte?</span>
-                        <p>Para inscribirte a los talleres impartidos en el Club de Bordado, solo necesitas hacer un depósito bancario (Banorte, OXXO, SevenEleven) por el total o el 50% del costo del taller</p>
-                        <p>Envía un correo a silviapeligro@gmail.com para pedir los datos bancarios</p> */}
+                        <h4>¿Cómo me inscribo? <Link to="/registro">da click aquí</Link></h4>
                     </Modal.Body>
                     <Modal.Footer className="workshop-modal">
                         <Button onClick={this.handleClose}>Close</Button>

@@ -15,7 +15,7 @@ class Club extends Component {
 
   handleScroll() {
       let scrollPtge = (window.scrollY/(document.getElementById("root").offsetHeight - window.innerHeight))*100;
-      if(scrollPtge>88){
+      if(scrollPtge>68){
         let pics = document.querySelectorAll(".insta-box");
         pics.forEach(function(element) {
           element.classList.add("animate");

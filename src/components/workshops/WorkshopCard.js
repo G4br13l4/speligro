@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col, Grid, Button, Modal, OverlayTrigger, Popover, Tooltip} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import {CustomCarousel} from './Carousel';
-import './../css/WorkshopCard.css';
+import {CustomCarousel} from '../shared/Carousel';
+import '../../App.css';
 
 export class WorkshopCard extends Component {
     constructor(props, context) {
@@ -36,15 +36,16 @@ export class WorkshopCard extends Component {
                     <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header className="workshop-modal" closeButton>
                         <Modal.Title>{this.props.title}</Modal.Title>
+                        <p>Impartido por {this.props.teacher}</p>
                     </Modal.Header >
                     <Modal.Body className="workshop-modal">
-                        <p>Impartido por {this.props.teacher}</p>
-                        <p>Duración: {this.props.duration} (divididas en {this.props.sessions}) </p>
-                        <p>Horario: {this.props.time}</p> 
-                        <p>Lugar: {this.props.place}</p>
-                        <p>Descripción: {this.props.description}</p>
-                        <p>Costo: {this.props.normalCost} (incluye material)</p>
-                        <p>Costo para miembros del Club de Bordado: {this.props.memberCost} (incluye material)</p>
+                        <p><span className="bold">Fecha: </span>10/12/19</p>
+                        <p><span className="bold">Duración: </span>{this.props.duration} (divididas en {this.props.sessions}) </p>
+                        <p><span className="bold">Horario: </span>{this.props.time}</p> 
+                        <p><span className="bold">Lugar: </span>{this.props.place}</p>
+                        <p><span className="bold">Descripción: </span>{this.props.description}</p>
+                        <p><span className="bold">Costo: </span>{this.props.normalCost} (incluye material)</p>
+                        <p><span className="bold">Costo para miembros del Club de Bordado: </span>{this.props.memberCost} (incluye material)</p>
                         <p><Link to="/club">¿Aún no eres parte del club? ¿Quieres saber más?</Link></p>
                         <CustomCarousel 
                             height={{height:"45vh"}}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {NavBar} from './NavBar';
 import { Grid } from 'react-bootstrap';
-import {Footer} from './Footer';
+import {NavBar} from '../shared/NavBar';
+import {Footer} from '../shared/Footer';
 
 class Embroideries extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {MenuItem, Row, Col,Button, Modal, ListGroup, ListGroupItem} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import './../css/NavBar.css';
+import '../../App.css';
 
 export class NavBar extends Component {
   constructor(props,context){

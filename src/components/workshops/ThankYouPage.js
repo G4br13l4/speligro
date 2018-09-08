@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col} from 'react-bootstrap';
-import {NavBar} from './NavBar';
-import {Footer} from './Footer';
+import {NavBar} from '../shared/NavBar';
+import {Footer} from '../shared/Footer';
 
 class ThankYouPage extends Component {
     render() {

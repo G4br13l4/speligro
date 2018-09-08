@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Grid} from 'react-bootstrap';
-import {NavBar} from './NavBar';
-import {Title} from './Title';
+import {NavBar} from '../shared/NavBar';
+import {Title} from '../shared/Title';
+import {Mailing} from '../shared/Mailing';
+import {Footer} from '../shared/Footer';
 import {WorkshopCard} from './WorkshopCard';
-import {Mailing} from './Mailing';
-import {Footer} from './Footer';
 
 class Workshops extends Component {
   render() {

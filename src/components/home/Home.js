@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import {NavBar} from './NavBar';
-import {CustomCarousel} from './Carousel';
-import {Footer} from './Footer';
-import {InstagramFeed} from './InstagramFeed';
-import {Mailing} from './Mailing';
+import {NavBar} from '../shared/NavBar';
+import {CustomCarousel} from '../shared/Carousel';
+import {Footer} from '../shared/Footer';
+import {InstagramFeed} from '../shared/InstagramFeed';
+import {Mailing} from '../shared/Mailing';
 
 class Home extends Component {
   componentDidMount() {
@@ -30,6 +30,7 @@ class Home extends Component {
         });
       }
   }
+  
   render() {
     return (
         <Grid fluid>

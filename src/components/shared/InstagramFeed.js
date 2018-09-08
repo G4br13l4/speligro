@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Row, Col} from 'react-bootstrap';
 import Instafeed from 'react-instafeed';
-import './../css/InstagramFeed.css';
+import '../../App.css';
 import { DH_NOT_SUITABLE_GENERATOR } from 'constants';
 
 const instafeedTarget = 'instafeed';

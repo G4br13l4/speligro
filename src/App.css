@@ -2,24 +2,190 @@
     box-sizing: border-box; 
     padding: 0;
     margin:0;
-    font-family: 'Leckerli One', cursive;
-    
-  }
+    font-family: 'Nunito', sans-serif;
+}
   
-  .no-pad{
-    padding: 0;
-  }
+img, 
+video {
+    width: 100%;
+}
 
-  .h-center {
+.no-pad{
+    padding: 0;
+}
+
+.h-center {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
 
-  /*Mailing*/
+.bold{
+    font-weight: bold;
+}
 
-  #mailing{
+.justified{
+    text-align: justify;
+}
+/*Mailing*/
+
+#mailing{
     margin: 5% 0%;  
     text-align:center;
-  }  
+}  
 
+/* Carousel */
+.carousel-control {
+  opacity: 0.2;
+}
+
+/*Footer*/
+.row_footer{
+    background: black;
+    height: 14vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/*Instagram Feed*/
+.insta-box{
+    padding: 0;
+    height: 19vh;
+}
+
+.animate {
+    -webkit-animation: rotation 2s 1 linear;
+}
+
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+.instafeed__item__background{
+    height: 100%;
+}
+
+.icon{
+    width: 10%;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+/*Navbar*/
+.box_menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box_menu,
+.box_lang {
+    margin-top: 5%;
+}
+
+.box_logo{
+    height: 100%;
+    padding: 0;
+}
+
+.box_logo img {
+    border-radius: 50%;
+    position: absolute;
+    bottom:-50%;
+    z-index: 1;
+}
+
+.nav{
+    height: 19vh;
+    background-image: url(./images/menu.jpg);
+    margin-bottom: 10vh;
+}
+
+.modal-content{
+    background-image: url("./images/menu.jpg");
+    text-align: center;
+    border-radius: 5%;
+}
+
+.menu-op{
+    height:10vh;
+    font-size: 1.3em;
+    
+}
+
+.menu-op a {
+    color: #000;
+}
+
+#container-modal-title a{
+    font-size: 2.1em;
+    color: #fff;
+}
+
+.modal-header span{
+    font-size: 2em;
+}
+
+/*Workshop*/
+.workshop-modal{
+    background:white;
+    text-align: left;
+}
+
+.workshop-card{
+    margin: 5% 0%;
+}
+
+.modal-title{
+    font-size: 1.6em;
+}
+
+.kit-title{
+    font-size: 1.2em;
+}
+
+/*KitCard*/
+ul, 
+ol{
+    padding-left: 15px;
+}
+
+.kitcard{
+    margin: 4% 0;
+}
+
+.logo-store{
+    margin-bottom: 3%;
+}
+
+.mail-cost{
+    margin-top:5%;
+    font-size: .9em;
+}
+
+.kit-video{
+    padding: 0;
+}
+
+.kit-modal{
+    padding-top: 0;
+}
+
+
+#club-benefits{
+    margin-top: 5%;
+}
+
+#buy-insignia{
+    margin-top: 5%;
+    text-align: center; 
+}

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Home from './components/js/Home';
-import Workshops from './components/js/Workshops';
-import Embroideries from './components/js/Embroideries';
-import Kits from './components/js/Kits';
-import Club from './components/js/Club';
-import Contact from './components/js/Contact';
-import Register from './components/js/Register';
-import ThankYouPage from './components/js/ThankYouPage';
+import Home from './components/home/Home';
+import Workshops from './components/workshops/Workshops';
+import Embroideries from './components/embroideries/Embroideries';
+import Kits from './components/kits/Kits';
+import Club from './components/club/Club';
+import Contact from './components/contact/Contact';
+import Register from './components/workshops/Register';
+import ThankYouPage from './components/workshops/ThankYouPage';
 
 class App extends Component {
   render() {

@@ -20,13 +20,7 @@ video {
     flex-wrap: wrap;
 }
 
-.bold{
-    font-weight: bold;
-}
-
-.justified{
-    text-align: justify;
-}
+.bold{font-weight: bold}
 /*Mailing*/
 
 #mailing{
@@ -36,7 +30,7 @@ video {
 
 /* Carousel */
 .carousel-control {
-  opacity: 0.2;
+  opacity: .2;
 }
 
 /*Footer*/
@@ -107,7 +101,6 @@ video {
 .nav{
     height: 19vh;
     background-image: url(./images/menu.jpg);
-    margin-bottom: 10vh;
 }
 
 .modal-content{
@@ -189,3 +182,27 @@ ol{
     margin-top: 5%;
     text-align: center; 
 }
+
+/*Order Form*/
+
+#s-size,
+#m-size,
+#l-size{
+    background: #000;
+    height: 9vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s-size{width:80%}
+
+#m-size{width:90%}
+
+#l-size{width:100%}
+
+.radio{ margin:0}
+
+#order-textarea{height: 20vh}
+

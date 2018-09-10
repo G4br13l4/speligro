@@ -31,13 +31,15 @@ class Club extends Component {
   render() {
     return (
         <Grid fluid>
-            <NavBar/>
+            <NavBar
+              margin={{marginBottom:"13vh"}}
+            />
             <Row className="h-center">
                 <h3>Club de Bordado</h3>
                 <Col xs={12} className="no-pad">
                   <img src="assets/insignia.jpg"/>
                 </Col>
-                <Col xs={11} className="justified" id="club-benefits">
+                <Col xs={11} id="club-benefits">
                   <p className="bold">Beneficios para miembros del Club:</p>
                   <ul>
                       <li>Podrás asistir a las reuniones mensuales (CDMX)</li>

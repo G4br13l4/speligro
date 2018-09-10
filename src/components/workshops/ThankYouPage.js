@@ -7,7 +7,9 @@ class ThankYouPage extends Component {
     render() {
       return (
             <Grid fluid>
-                <NavBar/>
+                <NavBar
+                    margin={{marginBottom:"12vh"}}
+                />
                 <Row>
                     <Col xs={12}>
                         <h2>¡Gracias!</h2>

@@ -8,7 +8,9 @@ class Kits extends Component {
     render() {
       return (
           <Grid fluid>
-              <NavBar/>
+              <NavBar
+                margin={{marginBottom:"13vh"}}
+              />
               <h3>¿Quieres aprender a bordar desde casa?</h3>
               <p>Ahora tengo varias opciones de clases en vídeo</p>
               <KitCard

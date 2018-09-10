@@ -10,7 +10,9 @@ class Workshops extends Component {
   render() {
     return (
         <Grid fluid>
-            <NavBar/>
+            <NavBar
+              margin={{marginBottom:"12vh"}}
+            />
             <Title title="Pròximos Talleres"/>
             <WorkshopCard 
                 img= "assets/taller1.jpg"

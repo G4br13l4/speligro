@@ -20,7 +20,7 @@ export class NavBar extends Component {
 
   render() {
       return ( 
-          <Row className="nav">
+          <Row className="nav" style={this.props.margin}>
             <Col xs={4} md={4} className="box_lang">
               <Button>ES</Button><Button>EN</Button>
             </Col>

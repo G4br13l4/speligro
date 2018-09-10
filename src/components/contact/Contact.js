@@ -9,7 +9,9 @@ class Contact extends Component {
     render() {
       return (
           <Grid fluid>
-            <NavBar/>
+            <NavBar
+              margin={{marginBottom:"13vh"}}
+            />
             <Title title="Contacto"/>
             <ContactForm/>
             <Footer/>

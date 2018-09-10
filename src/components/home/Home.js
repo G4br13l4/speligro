@@ -34,8 +34,10 @@ class Home extends Component {
   render() {
     return (
         <Grid fluid>
-            <NavBar/>
-            <CustomCarousel 
+            <NavBar
+              margin={{marginBottom:"15vh"}}
+            />
+            <CustomCarousel
               height={{height:"60vh"}}
               firPhoto="assets/calendar.jpg"
               secPhoto="assets/anuncio.jpg" 

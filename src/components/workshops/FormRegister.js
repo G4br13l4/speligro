@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, FormControl, ControlLabel, Checkbox, Radio, FormGroup, HelpBlock, Button} from 'react-bootstrap';
+import { Redirect } from 'react-router';
 
 function FieldGroup({ id, label, help, ...props }) {
     return (
@@ -35,7 +36,8 @@ export class RegisterForm extends Component {
     async handleSubmit(e){
         e.preventDefault();
 
-        const {name, workshop, date, email} = this.state;  
+        const {name, workshop, date, email} = this.state;
+        <Redirect to='/gracias' /> 
     }
 
     render() {

@@ -9,7 +9,9 @@ class Register extends Component {
     render() {
       return (
           <Grid fluid>
-            <NavBar/>
+            <NavBar
+              margin={{marginBottom:"11vh"}}
+            />
             <Title title="Registro a taller"/>
             <RegisterForm/>
             <Footer/>

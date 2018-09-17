@@ -32,7 +32,7 @@ export class ContactForm extends Component {
         e.preventDefault();
 
         const {name, email, message} = this.state;
-
+        console.log(this.state)
         
     }
 

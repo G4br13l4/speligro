@@ -54,9 +54,7 @@ class Home extends Component {
               clientId='65b3795a54284f08ad8f893042b7fc0c'
               accessToken='200766832.65b3795.64650c8e74eb4c4fbf714c8bca5b7de2'
             />
-            <Mailing
-              text="¿Te gustaría recibir info sobre últimas noticias?"
-            />
+            
             <Footer/>
         </Grid>  
     );

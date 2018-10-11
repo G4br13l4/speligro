@@ -18,7 +18,7 @@ class Embroideries extends Component {
               secPhoto="assets/order2.jpg" 
               thiPhoto="assets/order3.jpg" 
             />
-            <OrderForm/>
+            
             <Footer/>
         </Grid>  
     );

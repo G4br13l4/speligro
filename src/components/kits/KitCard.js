@@ -59,20 +59,17 @@ export class KitCard extends Component {
                     <Modal.Body className="workshop-modal kit-modal">
                         <Row className="h-center">
                             <Col xs={12} className="kit-video">
-                                <video 
-                                    src="https://media.giphy.com/media/dYx2NhLGY8LPBKZapw/giphy.mp4"
-                                    autoPlay="true"
-                                >
-                                </video>
+                                <img
+                                    src="https://dummyimage.com/600x400/ab9fab/ffffff&text=En+construcci%C3%B3n"
+                                    // autoPlay="true"
+                                />
+                                
                             </Col>
                             <Col xs={12}>
                                 <div>
                                     <p>Este kit incluye :</p>
                                     {this.props.basic}
                                 </div>
-                            </Col>
-                            <Col xs={8} className="logo-store">
-                                <a href={this.props.basicEtsy}><img src="assets/etsy.png"/></a>
                             </Col>
                             <Col xs={8} className="logo-store">
                                 <a href={this.props.basicKichink}><img src="assets/kichink.png"/></a>
@@ -106,9 +103,6 @@ export class KitCard extends Component {
                                     <p>Este kit incluye :</p>
                                     {this.props.deluxe}
                                 </div>
-                            </Col>
-                            <Col xs={8} className="logo-store">
-                                <a href={this.props.deluxeEtsy}><img src="assets/etsy.png"/></a>
                             </Col>
                             <Col xs={8} className="logo-store">
                                 <a href={this.props.deluxeKichink}><img src="assets/kichink.png"/></a>

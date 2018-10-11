@@ -14,7 +14,7 @@ class Kits extends Component {
               <h3>¿Quieres aprender a bordar desde casa?</h3>
               <p>Ahora tengo varias opciones de clases en vídeo</p>
               <KitCard
-                img="./assets/kit1.png"
+                img="https://dummyimage.com/600x400/ab9fab/ffffff&text=En+construcci%C3%B3n"
                 name="Bordado Básico"
                 summary="En este taller básico te enseñare sobre cada uno de los materiales necesarios que se utlizan para bordar a mano"
                 basicEtsy=""
@@ -67,7 +67,7 @@ class Kits extends Component {
                 )}
               />
               <KitCard
-              img="./assets/kit2.jpg"
+              img="https://dummyimage.com/600x400/ab9fab/ffffff&text=En+construcci%C3%B3n"
               name="Muñequita María"
               summary="El kit incluye los materiales necesarios para que puedas bordar este diseño asi como acceso ilimitado a un videotutorial donde te enseñare paso a paso las puntadas que aplique en este diseño súper mexicano"
               basicEtsy=""

@@ -13,7 +13,11 @@ class Contact extends Component {
               margin={{marginBottom:"13vh"}}
             />
             <Title title="Contacto"/>
-            <ContactForm/>
+            <img
+                src="https://dummyimage.com/600x400/ab9fab/ffffff&text=En+construcci%C3%B3n"
+                // autoPlay="true"
+            />
+            {/* <ContactForm/> */}
             <Footer/>
           </Grid>  
       );

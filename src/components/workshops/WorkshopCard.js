@@ -38,12 +38,13 @@ export class WorkshopCard extends Component {
                         <Modal.Title>{this.props.title}</Modal.Title>
                         <p>Impartido por {this.props.teacher}</p>
                     </Modal.Header >
-                    <Modal.Body className="workshop-modal">
-                        <p><span className="bold">Fecha: </span>10/12/19</p>
-                        <p><span className="bold">Duración: </span>{this.props.duration} (divididas en {this.props.sessions}) </p>
-                        <p><span className="bold">Horario: </span>{this.props.time}</p> 
-                        <p><span className="bold">Lugar: </span>{this.props.place}</p>
+                    <Modal.Body className="workshop-modal"> 
+                        <p><span className="bold">Duración: </span>{this.props.duration} (en {this.props.sessions}) </p>
+                        <p><span className="bold">Horario: </span>{this.props.timeday}</p> 
+                        <p><span className="bold">Lugar: </span>Club de Bordado ( Colonia del Valle Norte, CDMX)</p>
                         <p><span className="bold">Descripción: </span>{this.props.description}</p>
+                        <p><span className="bold">Próximas fechas: </span></p> 
+                        {this.props.dates} 
                         <p><span className="bold">Costo: </span>{this.props.normalCost} (incluye material)</p>
                         <p><span className="bold">Costo para miembros del Club de Bordado: </span>{this.props.memberCost} (incluye material)</p>
                         <p><Link to="/club">¿Aún no eres parte del club? ¿Quieres saber más?</Link></p>
@@ -53,11 +54,10 @@ export class WorkshopCard extends Component {
                             secPhoto={this.props.secPhoto} 
                             thiPhoto={this.props.thiPhoto}
                         />
-                        
-                        <h4>¿Cómo me inscribo? <Link to="/registro">da click aquí</Link></h4>
+                        <h4>¿Cómo me inscribo? <a href="mailto:hola@silviapeligro.com" target="_blank">da click aquí</a></h4>
                     </Modal.Body>
                     <Modal.Footer className="workshop-modal">
-                        <Button onClick={this.handleClose}>Close</Button>
+                        <Button onClick={this.handleClose}>Cerrar</Button>
                     </Modal.Footer>
                     </Modal>
                 </Col>
